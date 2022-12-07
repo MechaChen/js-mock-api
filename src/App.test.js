@@ -1,8 +1,11 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import App, { getFirstAlbumTitle } from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('getFirstAlbumTitle', () => {
+  describe('by default', () => {
+    it('should return quidem molestiae enim', async () => {
+      const title = await getFirstAlbumTitle();  // Run the function
+      expect(title).toEqual('quidem molestiae enim');
+    });
+  })
 });
