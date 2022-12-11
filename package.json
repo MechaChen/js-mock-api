@@ -36,6 +36,8 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/react": "^13.4.0"
+    "@testing-library/react": "^13.4.0",
+    "axios-mock-adapter": "^1.21.2",
+    "msw": "^0.49.1"
   }
 }
